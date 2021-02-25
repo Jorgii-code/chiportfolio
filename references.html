@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <title>References</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+    body,
+    html {
+      height: 100%;
+      color: rgb(206, 68, 13);
+      line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3,
+    .bgimg-4,
+    .bgimg-5,
+    .bgimg-6,
+    .bgimg-7,
+    .brimg-8 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url("images/parallax1.jpg");
+      min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("images/parallax2.jpg");
+      min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("images/parallax3.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (Birthday) */
+    .bgimg-4 {
+      background-image: url("images/parallax4.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-5 {
+      background-image: url("images/parallax5.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-6 {
+      background-image: url("images/parallax6.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-7 {
+      background-image: url("images/parallax7.jpg");
+      min-height: 400px;
+    }
+
+    /* Fourth image (References) */
+    .bgimg-8 {
+      background-image: url("images/parallax8.jpg");
+      min-height: 400px;
+    }
+
+    .w3-wide {
+      letter-spacing: 10px;
+    }
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+    .fa-search {
+      -webkit-text-stroke: 3px white; /* background color */
+      color: white;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3,
+      .bgimg-4,
+      .bgimg-5,
+      .bgimg-6,
+      .bgimg-7,
+      .bgimg-8 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+  </style>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-text-bold"
+          ><i></i> HOME</a
+        >
+        <a
+          href="travel-weather-advisory.html"
+          class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> Travel Weather Advisory</a
+        >
+        <a href="chinese-food-review.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i>中国菜 Review</a
+        >
+        <a href="北京的自行车-storyboard.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> 北京的自行车 - Storyboard</a
+        >
+        <a href="北京大学-walking-tour.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> 北京大学 - Walking Tour</a
+        >
+        <a href="references.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> References</a
+        >
+      </div>
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >HOME</a
+        >
+        <a
+          href="travel-weather-advisory.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >Travel Weather Advisory</a
+        >
+        <a
+          href="chinese-food-review.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >中国菜 Review</a
+        >
+        <a
+          href="北京的自行车-storyboard.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >北京的自行车 - Storyboard</a
+        >
+        <a
+          href="北京大学-walking-tour.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >北京大学 - Walking Tour</a
+        >
+        <a
+          href="references.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >REFERENCES</a
+        >
+      </div>
+    </div>
+
+    <!-- Fifth Parallax Image with References Text -->
+    <div class="bgimg-6 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-black-bold w3-red w3-wide"
+          >References</span
+        >
+      </div>
+    </div>
+
+    <!-- Container (References Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      <div class="w3-content w3-container w3-padding-64">
+        <h2 class="w3-center w3-text-bold">List of References</h2>
+        <p class="w3-justified w3-text-black">
+          <em
+            >Canva home page. (n.d.). Canva. Retrieved February 21, 2021, from 
+            <a href="https://www.canva.com/"
+              >https://www.canva.com/</a
+            >
+            <br />
+            Chaudhary, P. (2016, April 16). Steamed dumplings on steamer photo [Photograph]. Unsplash.
+            <a href="https://unsplash.com/photos/q66grqqHpDQ/info"
+              >https://unsplash.com/photos/q66grqqHpDQ/info</a
+            >
+            <br />
+            Gaar, B. (n.d.). Mandarin kitchen [Photograph]. USA Restaurant.
+            <a href="https://cdn.usarestaurants.info/assets/uploads/92c05f871ae2ceb1be98b255e2c3a742_-united-states-minnesota-hennepin-county-bloomington-mandarin-kitchen-952-884-5356htm.jpg"
+              >https://cdn.usarestaurants.info/assets/uploads/92c05f871ae2ceb1be98b255e2c3a742_-united-states-minnesota-hennepin-county-bloomington-mandarin-kitchen-952-884-5356htm.jpg</a
+            >
+            <br />
+            Gremler, B. (2018, June 20). Clear glass building near sea under grey sky [Photograph]. Unsplash. 
+            <a href="https://unsplash.com/photos/q_TzfAt4NQ8"
+              >https://unsplash.com/photos/q_TzfAt4NQ8</a
+            >
+            <br />
+            Johnson, E. (n.d.). Dim sum [Photograph]. Pinterest. 
+            <a href="https://www.pinterest.com/pin/373939575291107350/"
+              >https://www.pinterest.com/pin/373939575291107350/</a
+            >
+            <br />
+            Karakis, E. (2019, May 29). White university during daytime photo [Photograph]. Unsplash.
+            <a href="https://unsplash.com/photos/T-tVt4xsCdE/info"
+              >https://unsplash.com/photos/T-tVt4xsCdE/info</a
+            >
+            <br />
+            Mandarin kitchen. (n.d.). [Photograph]. Yelp.
+            <a href="https://s3-media0.fl.yelpcdn.com/bphoto/xRNcuA31NOBafTIh7shMOQ/l.jpg"
+              >https://s3-media0.fl.yelpcdn.com/bphoto/xRNcuA31NOBafTIh7shMOQ/l.jpg</a
+            >
+            <br />
+            Mandarin kitchen - minneapolis, MN. (n.d.). Mandarin Kitchen. Retrieved February 21, 2021, from
+            <a href="http://www.mandarinkitchenminneapolis.com/"
+              >http://www.mandarinkitchenminneapolis.com/</a
+            >
+            <br />
+            MANDARIN KITCHEN, minneapolis - menu, prices & restaurant reviews. (n.d.). Tripadvisor. Retrieved February 21, 2021, from
+            <a href="https://www.tripadvisor.com/Restaurant_Review-g43323-d1019931-Reviews-Mandarin_Kitchen-Minneapolis_Minnesota.html"
+              >https://www.tripadvisor.com/Restaurant_Review-g43323-d1019931-Reviews-Mandarin_Kitchen-Minneapolis_Minnesota.html</a
+            >
+            <br />
+            Popovich, M. (2019, September 29). White printer paper photo [Photograph]. Unsplash.
+            <a href="https://unsplash.com/photos/pJwWrP-OIfk"
+              >https://unsplash.com/photos/pJwWrP-OIfk</a
+            >
+            <br />
+            Rana, O. (2017, March 14). City bus in winter [Photograph]. Unsplash.
+            <a href="https://unsplash.com/photos/HOtPD7Z_74s"
+              >https://unsplash.com/photos/HOtPD7Z_74s</a
+            > 
+            Scanlon, H. (2016, January 30). Beijing bicycle (十七岁的单车, wang xiaoshuai, 2001) [Photograph]. Windows on Worlds.
+            <a href="https://windowsonworlds.com/2016/01/30/beijing-bicycle-%E5%8D%81%E4%B8%83%E5%B2%81%E7%9A%84%E5%8D%95%E8%BD%A6-wang-xiaoshuai-2001/"
+            >https://windowsonworlds.com/2016/01/30/beijing-bicycle-%E5%8D%81%E4%B8%83%E5%B2%81%E7%9A%84%E5%8D%95%E8%BD%A6-wang-xiaoshuai-2001/</a
+            >
+            <br />
+            Shutin, A. (2017, March 27). City view during nighttime photography photo [Photograph]. Unsplash.
+            <a href="https://unsplash.com/photos/uhn-U0sSxFQ"
+              >https://unsplash.com/photos/uhn-U0sSxFQ</a
+            >
+            <br />
+            Sohu.(2020, April 20). 19年前，周迅和高圆圆同时出演的“禁片”，解封后才知道有多残酷 [Photograph]. Sohu.
+            <a
+              href=" http://5b0988e595225.cdn.sohucs.com/images/20200420/6cfe11bbc7cc46238a5fc91c210201e5.jpeg"
+              > http://5b0988e595225.cdn.sohucs.com/images/20200420/6cfe11bbc7cc46238a5fc91c210201e5.jpeg</a
+            >
+            <br />
+            Trigon-film. (n.d.). Beijing bicycle - shiqi sui de danche [Photograph]. Trigon-Film.
+            <a href=" https://www.trigon-film.org/en/movies/Beijing_Bicycle/photos/large/3l.jpg"
+              > https://www.trigon-film.org/en/movies/Beijing_Bicycle/photos/large/3l.jpg</a
+            >
+            <br />
+            Tripadvisor.(n.d.). New fresh Wok(Falcon heights) - 餐厅/美食点评. Retrieved February 21, 2021, from
+            <a href="https://cn.tripadvisor.com/Restaurant_Review-g43060-d4718438-Reviews-New_Fresh_Wok-Falcon_Heights_Minnesota.html"
+              >https://cn.tripadvisor.com/Restaurant_Review-g43060-d4718438-Reviews-New_Fresh_Wok-Falcon_Heights_Minnesota.html</a
+            >
+            <br />
+            Tucker, T. (2016, July 31). City building during daytime photo [Photograph]. Unsplash.
+            <a href="https://unsplash.com/photos/au3CYbd7vCU"
+              >https://unsplash.com/photos/au3CYbd7vCU</a
+            >
+            <br />
+            V.qq.(n.d.). 十七岁的单车 [Photograph]. V.Qq.
+            <a href="https://puui.qpic.cn/qqvideo_ori/0/q302705tmfe_496_280/0"
+              >https://puui.qpic.cn/qqvideo_ori/0/q302705tmfe_496_280/0</a
+            >
+            <br />
+            w3schools.(n.d.). How to create a simple star rating with CSS. Retrieved February 21, 2021, from
+            <a href="https://www.w3schools.com/howto/howto_css_star_rating.asp"
+              >https://www.w3schools.com/howto/howto_css_star_rating.asp</a
+            >
+            <br />
+            W3Schools online web tutorials. (n.d.). W3Schools. Retrieved February 21, 2021, from
+            <a href="https://www.w3schools.com/"
+              >https://www.w3schools.com/</a
+            >
+            <br />
+            中国天气网.(n.d.-a). 台北天气预报,台北7天天气预报,台北15天天气预报,台北天气查询 - 中国天气网. 中国天气. Retrieved February 21, 2021, from
+            <a href="http://www.weather.com.cn/weather1d/101340101.shtml"
+              >http://www.weather.com.cn/weather1d/101340101.shtml</a
+            >
+            <br />
+            中国天气网.(n.d.-b). 【多伦多天气】多伦多今天天气预报,今天,今天天气,7天,15天天气预报,天气预报一周,天气预报15天查询. Retrieved February 22, 2021, from
+            <a href="http://www.weather.com.cn/weather1d/404040100.shtml"
+              >http://www.weather.com.cn/weather1d/404040100.shtml</a
+            >
+            <br />
+            中国天气网.(n.d.-c). 天气预报-中国天气网. 预报. Retrieved February 22, 2021, from
+            <a href="http://www.weather.com.cn/forecast/"
+              >http://www.weather.com.cn/forecast/</a
+            >
+            <br />
+            中国天气网.(n.d.-d). 【巴塞罗那天气】巴塞罗那今天天气预报,今天,今天天气,7天,15天天气预报,天气预报一周,天气预报15天查询. Retrieved February 21, 2021, from 
+            <a href="http://www.weather.com.cn/weather1d/206020100.shtml"
+              >http://www.weather.com.cn/weather1d/206020100.shtml</a
+            >
+            <br />
+            乌鸦的电影世界.(2013, April 13). 国外拿奖，国内遭禁，鬼知道这部国产电影经历了什么？ [Photograph]. Kuaibao. 
+            <a href="https://kuaibao.qq.com/s/20180413A0YFU500?refer=spider"
+              >https://kuaibao.qq.com/s/20180413A0YFU500?refer=spider</a
+            >
+            <br />
+            五玄土 ORIENTO. (2019, February 22). Tableware set [Photograph]. Unsplash.  
+            <a href="https://unsplash.com/photos/tJU1GxQLy4o"
+              >https://unsplash.com/photos/tJU1GxQLy4o</a
+            >
+            <br />
+            伊苏.赫.(2021, February 22). 北京的自行车 - storyboard. Canva.  
+            <a href="https://www.canva.com/design/DAEWzSvZlKg/7wPlc0ltzb3kQArurgbzqQ/edit#1"
+              >https://www.canva.com/design/DAEWzSvZlKg/7wPlc0ltzb3kQArurgbzqQ/edit#1</a
+            >
+            <br />
+            北京大学.(n.d.). 北京大学地图 [Photograph]. Map of Peking University. 
+            <a href="http://bicmr.pku.edu.cn/upload/file/2017/20171220/20171220103342_58137.jpg"
+              >http://bicmr.pku.edu.cn/upload/file/2017/20171220/20171220103342_58137.jpg</a
+            >
+            <br />
+            娱乐于.(2020, May 28). 单车代表了一个人的生活写照，那《十七岁的单车》成功是偶然吗？ [Photograph]. 每日头条.
+            <a href="https://kknews.cc/zh-my/entertainment/v5yjbqy.html"
+              >https://kknews.cc/zh-my/entertainment/v5yjbqy.html</a
+            >
+            <br /> 
+            子逸包.(2015, December 21). 誰是城裡人？十七歲的單車與北京 [Photograph]. Cine Zen. 
+            <a href="https://www.cinezen.hk/?p=5067"
+              >https://www.cinezen.hk/?p=5067</a
+            >
+            <br /> 
+            影侠酷.(2019, December 26). 解读经典《十七岁的单车》：赤裸裸的现实，平凡的世界 [Photograph]. V.Qq.
+            <a href="https://v.qq.com/x/search?q=%E5%8D%81%E4%B8%83%E5%B2%81%E7%9A%84%E5%8D%95%E8%BD%A6%E7%94%B5%E5%BD%B1&stag=9"
+              >https://v.qq.com/x/search?q=%E5%8D%81%E4%B8%83%E5%B2%81%E7%9A%84%E5%8D%95%E8%BD%A6%E7%94%B5%E5%BD%B1&stag=9</a
+            >
+            <br />
+          </em>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="references.html" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To The Top</a
+      >
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
