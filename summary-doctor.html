@@ -1,123 +1,134 @@
 <!DOCTYPE html>
 <html>
-  <title>中国菜 Review</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Lato", sans-serif;
-    }
-    body,
-    html {
-      height: 100%;
-      color: rgb(206, 68, 13);
-      line-height: 1.8;
-    }
+  <head>
+    <title>医生，我肚子疼</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: "Lato", sans-serif;
+        }
+        body,
+        html {
+          height: 100%;
+          color: rgb(206, 68, 13);
+          line-height: 1.8;
+        }
+    
+        /* Create a Parallax Effect */
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3,
+        .bgimg-4,
+        .bgimg-5,
+        .bgimg-6,
+        .bgimg-7,
+        .bgimg-8 {
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+          background-image: url("images/parallax1.jpg");
+          min-height: 100%;
+        }
+    
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+          background-image: url("images/parallax2.jpg");
+          min-height: 400px;
+        }
+    
+        /* Third image (Contact) */
+        .bgimg-3 {
+          background-image: url("images/parallax3.jpg");
+          min-height: 400px;
+        }
+    
+        /* Fourth image (Birthday) */
+        .bgimg-4 {
+          background-image: url("images/parallax4.jpg");
+          min-height: 400px;
+        }
+    
+        /* Fourth image (References) */
+        .bgimg-5 {
+          background-image: url("images/parallax5.jpg");
+          min-height: 400px;
+        }
+  
+        /* Fourth image (References) */
+        .bgimg-6 {
+          background-image: url("images/parallax6.jpg");
+          min-height: 400px;
+        }
+  
+        /* Fourth image (References) */
+        .bgimg-7 {
+          background-image: url("images/parallax7.jpg");
+          min-height: 400px;
+        }
+  
+        /* Fourth image (References) */
+        .bgimg-8 {
+          background-image: url("images/parallax8.jpg");
+          min-height: 400px;
+        }
+    
+        .w3-wide {
+          letter-spacing: 10px;
+        }
+        .w3-hover-opacity {
+          cursor: pointer;
+        }
+        .fa-search {
+          -webkit-text-stroke: 3px white; /* background color */
+          color: white;
+        }
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
 
-    /* Create a Parallax Effect */
-    .bgimg-1,
-    .bgimg-2,
-    .bgimg-3,
-    .bgimg-4,
-    .bgimg-5,
-    .bgimg-6,
-    .bgimg-7,
-    .bgimg-8 {
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
 
-    /* First image (Logo. Full height) */
-    .bgimg-1 {
-      background-image: url("images/parallax1.jpg");
-      min-height: 100%;
-    }
-
-    /* Second image (Portfolio) */
-    .bgimg-2 {
-      background-image: url("images/parallax2.jpg");
-      min-height: 400px;
-    }
-
-    /* Third image (Contact) */
-    .bgimg-3 {
-      background-image: url("images/parallax3.jpg");
-      min-height: 400px;
-    }
-
-    /* Fourth image (Birthday) */
-    .bgimg-4 {
-      background-image: url("images/parallax4.jpg");
-      min-height: 400px;
-    }
-
-    /* Fourth image (References) */
-    .bgimg-5 {
-      background-image: url("images/parallax5.jpg");
-      min-height: 400px;
-    }
-
-    /* Fourth image (References) */
-    .bgimg-6 {
-      background-image: url("images/parallax6.jpg");
-      min-height: 400px;
-    }
-
-    /* Fourth image (References) */
-    .bgimg-7 {
-      background-image: url("images/parallax7.jpg");
-      min-height: 400px;
-    }
-
-    /* Fourth image (References) */
-    .bgimg-8 {
-      background-image: url("images/parallax8.jpg");
-      min-height: 400px;
-    }
-
-    .w3-wide {
-      letter-spacing: 10px;
-    }
-    .w3-hover-opacity {
-      cursor: pointer;
-    }
-    .fa-search {
-      -webkit-text-stroke: 3px white; /* background color */
-      color: white;
-    }
-
-    /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1600px) {
-      .bgimg-1,
-      .bgimg-2,
-      .bgimg-3,
-      .bgimg-4,
-      .bgimg-5,
-      .bgimg-6,
-      .bgimg-7,
-      .bgimg-8 {
-        background-attachment: scroll;
-        min-height: 400px;
-      }
-    }
-
-  </style>
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+          .bgimg-1,
+          .bgimg-2,
+          .bgimg-3,
+          .bgimg-4,
+          .bgimg-5,
+          .bgimg-6,
+          .bgimg-7,
+          .bgimg-8 {
+            background-attachment: scroll;
+            min-height: 400px;
+          }
+        }
+  
+      </style>
+    </head>
   <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
@@ -219,45 +230,84 @@
         >
       </div>
     </div>
-    <!-- Sixth Parallax Image with Hobby Survey Text -->
-    <div
-      class="bgimg-3 w3-display-container w3-opacity-min"
-    >
-      <div class="w3-display-middle">
+
+    <!-- First Parallax Image with Title -->
+    <div class="bgimg-7 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle" style="white-space: nowrap">
         <span
           class="w3-center w3-padding-large w3-text-black-bold w3-red w3-xlarge w3-wide w3-animate-opacity"
-          >中国菜 Review</span
+          >Summary- "医生, 我的肚子疼”</span
         >
       </div>
     </div>
 
-    <!-- Container (Hardest Character Section) -->
-    <div class="w3-content w3-container w3-padding-64"><h3 class="w3-center w3-text-yellow">北海餐厅</h3>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star checked"></span>
-       <span class="fa fa-star"></span>
-      <p class="w3-center w3-text-black">
-        <em
-          >最好的地方吃中国菜以外的中国！
-          上周，我去了北海餐厅。我喜欢他们的中国饺子配牛肉、鸡肉和海鲜。我喜欢吃他们的螃蟹饺子。
-          他们也有包子，这在中国以外并不常见。我喜欢他们的菠萝。这道菜又好吃又正宗。我喜欢这家餐馆提供的点心。
-          我觉得我在吃巴西菜。我也喜欢喝热茶和水。即使食物不便宜，你也不会后悔试一试。这家餐厅很漂亮，很干净。
-          我觉得我又回到了中国。我可能会问服务员厨师会不会做巧克力，我个人喜欢。
-          用餐日期：2021年 1 月 23日
-        </em>
-      </p>
-      <div class="w3-light-grey">
-        <img src="images/mandarinkitchen1.jpg" class="w3-image w3-round" style="width: 200%" />
-      </div>
-      <br>
-      <div class="w3-light-grey">
-        <img src="images/mandarinkitchen2.jpg" class="w3-image w3-round" style="width: 200%" />
-      </div>
-      <br>
-      <div class="w3-light-grey">
-        <img src="images/mandarinkitchen3.jpg" class="w3-image w3-round" style="width: 200%" />
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+        <table class="w3-align-center">
+            <tr>
+              <th>Company</th>
+              <th>Contact</th>
+              <th>Country</th>
+            </tr>
+            <tr>
+              <td>Alfreds Futterkiste</td>
+              <td>Maria Anders</td>
+              <td>Germany</td>
+            </tr>
+            <tr>
+              <td>Centro comercial Moctezuma</td>
+              <td>Francisco Chang</td>
+              <td>Mexico</td>
+            </tr>
+            <tr>
+              <td>Ernst Handel</td>
+              <td>Roland Mendel</td>
+              <td>Austria</td>
+            </tr>
+            <tr>
+              <td>Island Trading</td>
+              <td>Helen Bennett</td>
+              <td>UK</td>
+            </tr>
+            <tr>
+              <td>Laughing Bacchus Winecellars</td>
+              <td>Yoshi Tannamuri</td>
+              <td>Canada</td>
+            </tr>
+            <tr>
+              <td>Magazzini Alimentari Riuniti</td>
+              <td>Giovanni Rovelli</td>
+              <td>Italy</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64">
+      
+      <div class="w3-row">
+        <div class="w3-col m6 w3-center w3-padding-large">
+            <h3 class="w3-center">Still from the video</h3>
+          <br />
+          <img
+            src="images/avatar_hat.jpg"
+            class="w3-round w3-image w3-opacity w3-hover-opacity-off"
+            alt="Photo of Me"
+            width="500"
+            height="333"
+          />
+          <p>
+            。。。
+          </p>
+        </div>
+
+        <!-- Hide this text on small devices -->
+        <div class="w3-col m6 w3-hide-small w3-padding-large">
+            <h3 class="w3-center">Doctor Prediction</h3>
+          <p>
+            。。。
+          </p>
+        </div>
       </div>
     </div>
 
@@ -321,4 +371,3 @@
     </script>
   </body>
 </html>
-
