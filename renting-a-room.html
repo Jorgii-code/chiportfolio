@@ -1,0 +1,384 @@
+<head>
+    <title>Renting a Room</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Lato", sans-serif;
+      }
+      body {
+          height: 100%;
+          color: rgb(241, 26, 11);
+          line-height: 1.8;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          height: 100%;
+          color: rgb(15, 3, 3);
+          line-height: 1.8;
+        }
+  
+      /* Create a Parallax Effect */
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3,
+      .bgimg-4,
+      .bgimg-5,
+      .bgimg-6,
+      .bgimg-7,
+      .bgimg-8,
+      .bgimg-9,
+      .bgimg-10, 
+      .bgimg-11,
+      .bgimg-12,
+      .bgimg-13 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+  
+      /* First image (Logo. Full height) */
+      .bgimg-1 {
+        background-image: url("images/parallax1.jpg");
+        min-height: 100%;
+      }
+  
+      /* Second image (Portfolio) */
+      .bgimg-2 {
+        background-image: url("images/parallax2.jpg");
+        min-height: 400px;
+      }
+  
+      /* Third image (Contact) */
+      .bgimg-3 {
+        background-image: url("images/parallax3.jpg");
+        min-height: 400px;
+      }
+  
+      /* Fourth image (Birthday) */
+      .bgimg-4 {
+        background-image: url("images/parallax4.jpg");
+        min-height: 400px;
+      }
+  
+      /* Fourth image (References) */
+      .bgimg-5 {
+        background-image: url("images/parallax5.jpg");
+        min-height: 400px;
+      }
+
+      /* Fourth image (References) */
+      .bgimg-6 {
+        background-image: url("images/parallax6.jpg");
+        min-height: 400px;
+      }
+
+      /* Fourth image (References) */
+      .bgimg-7 {
+        background-image: url("images/parallax7.jpg");
+        min-height: 400px;
+      }
+
+      /* Fourth image (References) */
+      .bgimg-8 {
+        background-image: url("images/parallax8.jpg");
+        min-height: 400px;
+      }
+
+      /* Fourth image (References) */
+      .bgimg-9 {
+        background-image: url("images/parallax8.jpg");
+        min-height: 400px;
+      }
+
+      /* Fourth image (References) */
+      .bgimg-10 {
+        background-image: url("images/parallax8.jpg");
+        min-height: 400px;
+      }
+
+      /* Fourth image (References) */
+      .bgimg-11 {
+        background-image: url("images/parallax8.jpg");
+        min-height: 400px;
+      }
+
+      /* Fourth image (References) */
+      .bgimg-12 {
+        background-image: url("images/parallax8.jpg");
+        min-height: 400px;
+      }
+
+      /* Fourth image (References) */
+      .bgimg-13 {
+        background-image: url("images/parallax8.jpg");
+        min-height: 400px;
+      }
+  
+      .w3-wide {
+        letter-spacing: 10px;
+      }
+      .w3-hover-opacity {
+        cursor: pointer;
+      }
+      .fa-search {
+        -webkit-text-stroke: 3px white; /* background color */
+        color: white;
+      }
+  
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1600px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3,
+        .bgimg-4,
+        .bgimg-5,
+        .bgimg-6,
+        .bgimg-7,
+        .bgimg-8,
+        .bgimg-9,
+        .bgimg-10, 
+        .bgimg-11,
+        .bgimg-12,
+        .bgimg-13 {
+          background-attachment: scroll;
+          min-height: 400px;
+        }
+      }
+
+    </style>
+    </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="index.html" class="w3-bar-item w3-button w3-text-bold"
+          ><i></i> HOME</a
+        >
+        <a
+          href="travel-weather-advisory.html"
+          class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> Travel Weather Advisory</a
+        >
+        <a href="chinese-food-review.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i>中国菜 Review</a
+        >
+        <a href="北京的自行车-storyboard.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> 北京的自行车 - Storyboard</a
+        >
+        <a href="北京大学-walking-tour.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> 北京大学 - Walking Tour</a
+        >
+        <a href="audio-description.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> Audio Description</a
+        >
+        <a href="summary-doctor.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i>Summary-医生</a
+        >
+        <a href="worst-&-best-date-interview.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> Dating Interview</a
+        >
+        <a href="renting-a-room.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> 出租卧室</a
+        >
+        <a href="browsing-the-sports-page.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> 运动网上</a
+        >
+        <a href="itinerary-travel-agency.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> Travel Intinerary</a
+        >
+        <a href="showing-care-different-culture.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> Showing Care</a
+        >
+        <a href="references.html" class="w3-bar-item w3-button w3-hide-small"
+          ><i></i> References</a
+        >
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+        <a
+          href="index.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >HOME</a
+        >
+        <a
+          href="travel-weather-advisory.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >Travel Weather Advisory</a
+        >
+        <a
+          href="chinese-food-review.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >中国菜 Review</a
+        >
+        <a
+          href="北京的自行车-storyboard.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >北京的自行车 - Storyboard</a
+        >
+        <a
+          href="北京大学-walking-tour.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >北京大学 - Walking Tour</a
+        >
+        <a
+          href="audio-description.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >Audio Description</a
+        >
+        <a
+          href="summary-doctor.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >Summary-医生</a
+        >
+        <a
+          href="worst-&-best-date-interview.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >Dating Interview</a
+        >
+        <a
+          href="renting-a-room.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >出租卧室</a
+        >
+        <a
+          href="browsing-the-sports-page.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >运动网上</a
+        >
+        <a
+          href="itinerary-travel-agency.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >Travel Intinerary</a
+        >
+        <a
+          href="showing-care-different-culture.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >Showing Care</a
+        >
+        <a
+          href="references.html"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >REFERENCES</a
+        >
+      </div>
+    </div>
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-10 w3-display-container w3-opacity-min">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-red w3-text-black-bold w3-wide"
+          >出租卧室</span
+        >
+      </div>
+    </div>
+
+    <!-- Container (Hardest Character Section) -->
+   <div class="w3-content w3-container w3-padding-64">
+    <div class="w3-light-grey">
+      <img src="images/room-renting.jpg" class="w3-image w3-round" style="width: 200%" />
+    </div>
+    <div class="w3-light-grey">
+     <audio controls>
+       <source src="出租卧室.mp3" type="audio/mpeg">
+         出租卧室
+     </audio>
+    </div>
+   </div>
+
+    <!-- Footer -->
+    <footer
+      class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off"
+    >
+      <a href="index.html" class="w3-button w3-light-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>To The Top</a
+      >
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function () {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+  </body>
+</html>
